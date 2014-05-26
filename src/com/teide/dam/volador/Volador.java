@@ -9,9 +9,9 @@ package com.teide.dam.volador;
  * @author DAM1
  */
 public interface Volador {
-    public abstract String despegar ();
-    public abstract String aterrizar (int metros);
-        
-    
-    
+
+    public abstract String despegar();
+
+    public abstract String aterrizar(int metros);
+
 }
