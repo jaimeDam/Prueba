@@ -10,21 +10,24 @@ import java.util.ArrayList;
  *
  * @author DAM1
  */
+
 public class Helipuerto {
     
-     public ArrayList <Helipuerto> listado;
-     {
-         listado = new ArrayList<>();
-        
+     public ArrayList <Helipuerto> listado = new ArrayList<>();
+     
+     public void añadir (Volador v) {
+         listado.add((Helipuerto) v);
      }
-
-    private Helipuerto(int nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-     public void añadir (int nombre) {
-         Helipuerto t = new Helipuerto(nombre);
-         listado.add(t);
-    }
+     
+     public boolean eliminar (int pos) {
+     
+       if (pos < listado.size()) {
+           listado.remove(pos);
+           return true;
+       }
+       return false;
+     }
+     
 }
    
     
